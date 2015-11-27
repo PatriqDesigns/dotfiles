@@ -1,0 +1,26 @@
+#start applications
+mod4 + Return
+	urxvt
+
+#move windows
+mod4 + {Up, Down, Left, Right}
+	wmv {0 -20, 0 20, -20 0, 20 0} $(pfw)
+
+#rezise windows
+mod4 + shift + {Up, Down, Left, Right}
+	wrs {0 -20, 0 20, -20 0, 20 0} $(pfw)
+
+#kills focused window
+mod4 + q
+	killw $(pfw)
+
+#toggle visibleness of the focused window
+mod4 + s
+	chwso -i $(pfw)
+
+#lock computer
+mod4 + l
+	slock
+
+mod4 + r
+	pkill -USR1 -x sxhkd
