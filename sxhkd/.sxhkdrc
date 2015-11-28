@@ -22,5 +22,32 @@ mod4 + s
 mod4 + l
 	slock
 
+#restart sxhkd
 mod4 + r
 	pkill -USR1 -x sxhkd
+
+#XF86 keys
+XF86AudioRaiseVolume
+	amixer -q sset Master 3%+
+
+XF86AudioLowerVolume
+	amixer -q sset Master 3%-
+
+XF86AudioMute
+	amixer -q sset Master toggle
+
+XF86AudioPlay 
+	playerctl play-pause
+	
+XF86AudioNext
+	playerctl next
+
+XF86AudioPrev
+	playerctl prev
+
+XF86MonBrightnessUp
+	xbacklight -inc 10
+
+XF86MonBrightnessDown
+	xbacklight -dec 10
+

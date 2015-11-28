@@ -2,6 +2,6 @@
 open_with vim
 d
 open_with pdftotext
-open_with 
 del
+open_with 
 delete
