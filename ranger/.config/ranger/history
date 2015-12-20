@@ -5,3 +5,4 @@ open_with pdftotext
 del
 open_with 
 delete
+shell cat Enunciado.pdf | less

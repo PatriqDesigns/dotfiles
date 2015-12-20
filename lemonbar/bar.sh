@@ -32,8 +32,8 @@ sound() {
 # Bar loop
 while :; do
 	buf=""
-	buf="${buf} %{c} %{F#c3c3c3} ●●●●● %{F-}"
+	buf="${buf} %{c} %{F#c3c3c3} ● ● ● ● ● %{F-}"
 	buf="${buf} %{r}%{B#c3c3c3}%{F#131313} ${SOUND_SYM} %{F-}%{B-}%{F#c3c3c3} $(sound) %{F-}%{B#c3c3c3}%{F#131313} ${CLOCK_SYM} %{F-}%{B-}%{F#c3c3c3} $(clock) %{F-}%{B#c3c3c3}%{F#131313} ${BATTERY_SYM} %{F-}%{B-}%{F#c3c3c3} $(battery) %{F-}"
         echo "$buf"
-	sleep 0.1
+	sleep 1
 done
